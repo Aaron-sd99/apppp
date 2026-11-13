@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guardian · Comparación de código</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="logo"><span class="logo-symbol">G</span><span>Guardian <span class="muted">/ Comparador</span></span></div>
+      <div class="top-actions"><span class="local"><i></i> Laboratorio local</span><button class="refresh" id="refresh">↻ Actualizar</button></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="intro">
+      <div><div class="eyebrow">DEMOSTRACIÓN CONTROLADA · SPRINTDESK</div><h1>Cambios reales. <span>Resultados comprobables.</span></h1><p>Izquierda: código original que no se modifica. Derecha: archivos actuales de la aplicación después de trabajar con Copilot.</p></div>
+      <div class="intro-right"><span class="small">ALCANCE</span><strong>R03</strong><span>Editar tareas</span></div>
+    </div>
+    <section class="stats" aria-label="Estado de la demostración">
+      <article class="stat"><span>BASELINE</span><div class="value">20<small>%</small></div><p>R01 y R02</p></article>
+      <article class="stat"><span>VERIFICACIÓN ACTUAL</span><div id="percentage" class="value">—</div><p id="verifyNote">Ejecuta python check.py</p></article>
+      <article class="stat"><span>ARCHIVOS MODIFICADOS</span><div id="changed" class="value">0</div><p id="lines">+0 añadidas · −0 eliminadas</p></article>
+      <article class="stat"><span>EVIDENCIA FUNCIONAL</span><div id="apiState" class="verify" role="status">Sin pruebas</div><p id="uiState">Interfaz sin verificar</p></article>
+    </section>
+    <section class="notice"><div class="notice-icon">i</div><p>El porcentaje representa funcionalidades demostradas, no calidad general. Para declarar R03 completo se exige una prueba HTTP y una observación real del navegador. El comparador nunca inventa cambios.</p></section>
+    <section class="compare">
+      <div class="section-top"><div><div class="eyebrow">DIFF DE ARCHIVOS</div><h2>Antes y después</h2><p>Selecciona un archivo para revisar cada línea modificada.</p></div><span class="change-status" id="changeStatus">Sin modificaciones</span></div>
+      <div class="workbench">
+        <aside class="files"><div class="aside-head">ARCHIVOS DE LA APLICACIÓN <span id="fileCount">0</span></div><div id="files" class="file-list"></div></aside>
+        <section class="diff"><div class="file-head"><strong id="fileName">Selecciona un archivo</strong><span id="fileLabel">Antes / Después</span></div><div class="headings"><span>ANTES · BASELINE</span><span>DESPUÉS · COPILOT</span></div><div id="diff" class="diff-rows"><div class="empty">Todavía no hay un archivo seleccionado.</div></div></section>
+      </div>
+    </section>
+    <footer>Frontend de comparación aislado · sin dependencias externas · no edita el proyecto</footer>
+  </main>
+  <script src="/main.js"></script>
+</body>
+</html>

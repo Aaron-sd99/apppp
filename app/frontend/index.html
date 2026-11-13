@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SprintDesk · Prototipo 20%</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header><div class="brand">◆ SprintDesk <span>beta 0.2</span></div><small>App deliberadamente incompleta para auditar</small></header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow">TABLERO DEL EQUIPO</p><h1>Mis tareas</h1><p>Un gestor mínimo con solo dos funcionalidades.</p></div>
+      <div class="counter"><strong id="count">—</strong><span>tareas registradas</span></div>
+    </section>
+    <div class="layout">
+      <section class="panel">
+        <h2>Crear tarea <span class="ready">Disponible</span></h2>
+        <form id="newTask"><input id="title" placeholder="Ej. Diseñar pantallas del proyecto" maxlength="220" required><button type="submit">+ Añadir</button></form>
+        <p id="message" aria-live="polite"></p>
+        <h2>Tareas actuales <span class="ready">Disponible</span></h2>
+        <div id="tasks" class="task-list"><p>Recuperando tareas...</p></div>
+      </section>
+      <aside class="panel planned">
+        <h2>Funcionalidades futuras</h2>
+        <p>Estas opciones todavía no funcionan: el sistema solo está implementado al 20%.</p>
+        <div class="roadmap">
+          <span>Editar tareas</span><span>Completar tareas</span><span>Eliminar tareas</span>
+          <span>Buscar</span><span>Filtrar</span><span>Asignar prioridad</span>
+          <span>Categorías</span><span>Historial</span>
+        </div>
+        <p class="tip">El próximo incremento de demostración consiste en implementar exclusivamente «Editar tareas» (30%).</p>
+      </aside>
+    </div>
+    <footer>Solo funciona en localhost · No contiene información real · Arquitectura intencionalmente deficiente</footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
